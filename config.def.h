@@ -68,9 +68,9 @@ static const char *colors[][4] = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "s" };
-/* ffox, programming1, term, music, steam, folder, play icon, document, message  */
-static const char *tagsalt[] = { "", "{}", "$", "", "", "", "", "", "" };
+static const char *tags[] = { "1", "2", "3", "4" };
+/* reading, music, work-related, anything off topic */
+static const char *tagsalt[] = { "", "", "$", "{}" };
 
 static const char scratchpadname[] = "instantscratchpad";
 
@@ -111,14 +111,8 @@ static const int decorhints  = 1;    /* 1 means respect decoration hints */
 static const Layout layouts[] = {
 	/* symbol     arrange function */
 	{ "+",        tile },    /* first entry is default */
-	{ "#",        grid },
-	{ "-",        NULL },    /* no layout function means floating behavior */
-	{ "[M]",      monocle },
-	{ "|||",      tcl },
-	{ "H[]",      deck },
-	{ "O",        overviewlayout },
 	{ "TTT",      bstack },
-	{ "===",      bstackhoriz },
+	{ "-",        NULL },    /* no layout function means floating behavior */
 	{ NULL,       NULL },
 };
 
