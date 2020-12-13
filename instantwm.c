@@ -1185,7 +1185,7 @@ createmon(void)
 	m->clientcount = 0;
     m->overlaymode = 0;
 	m->scratchvisible = 0;
-	m->lt[0] = &layouts[3];
+	m->lt[0] = &layouts[0];
 	m->lt[1] = &layouts[0];
 	strncpy(m->ltsymbol, layouts[0].symbol, sizeof m->ltsymbol);
 	m->pertag = ecalloc(1, sizeof(Pertag));
